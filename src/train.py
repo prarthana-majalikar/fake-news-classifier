@@ -35,7 +35,6 @@ def train_model():
 
     # Save model and vectorizer
     joblib.dump(model, 'models/fake_news_model.pkl')
-    joblib.dump(vectorizer, 'models/vectorizer.pkl')
 
 if __name__ == "__main__":
     train_model()

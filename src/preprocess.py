@@ -24,15 +24,11 @@ def preprocess_text(text):
     words = [word for word in words if word not in stop_words]
     
     # Lemmatize words
-    lemmatizer = WordNetLemmatizer()
-    words = [lemmatizer.lemmatize(word) for word in words]
+    # lemmatizer = WordNetLemmatizer()
+    # words = [lemmatizer.lemmatize(word) for word in words]
     
     return " ".join(words)
 
-# Test on a sample
-sample_text = "Ben Stein Calls Out 9th Circuit Court: Committing Treason!"
-preprocessed_text = preprocess_text(sample_text)
-print(preprocessed_text)
 
 def preprocess_data(df):
     df['text'] = df['text'].apply(preprocess_text)
