@@ -6,6 +6,7 @@ import pandas as pd
 from preprocess import preprocess_data
 from data_loader import load_data
 from vectorizer import vectorize_text
+import joblib
 
 def train_model():
     # Load and preprocess data
@@ -31,6 +32,10 @@ def train_model():
     y_pred = model.predict(X_test)
     print("Accuracy:", accuracy_score(y_test, y_pred))
     print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+    # Save model and vectorizer
+    joblib.dump(model, 'models/fake_news_model.pkl')
+    joblib.dump(vectorizer, 'models/vectorizer.pkl')
 
 if __name__ == "__main__":
     train_model()
