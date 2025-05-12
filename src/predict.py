@@ -1,5 +1,5 @@
 import joblib
-from preprocess import preprocess_text
+from src.preprocess import preprocess_text
 
 # Load model and vectorizer
 model = joblib.load('models/fake_news_model.pkl')
@@ -19,7 +19,9 @@ def predict_news(text):
     
     # Output
     label = "REAL" if prediction == 1 else "FAKE"
-    print(f"\nPrediction: {label} news ({prob*100:.2f}% confidence)")
+    confidence = round(prob* 100, 2)
+    print(f"\nPrediction: {label} news ({confidence}% confidence)")
+    return label, confidence
 
 if __name__ == "__main__":
     print("Enter a news headline or article to classify it as FAKE or REAL.")
