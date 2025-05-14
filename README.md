@@ -68,5 +68,5 @@ PYTHONPATH=. python app/app.py
 ---
 
 🙋‍♀️ Author
-Made by Prarthana Majalikar
+- Made by Prarthana Majalikar
 
