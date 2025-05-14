@@ -2,8 +2,9 @@
 
 A web-based application that uses machine learning and NLP techniques to detect whether a given news article is **real** or **fake**.
 
-![Fake News Classifier Demo](<img width="1065" alt="image" src="https://github.com/user-attachments/assets/618b1e2c-20c4-4204-b128-a4f127dd3d91" />
-)
+![Fake News Classifier Demo]
+<img width="1065" alt="image" src="https://github.com/user-attachments/assets/9fe5169d-10cc-43c8-98e9-1bc5c002214b" />
+
 
 ---
 
