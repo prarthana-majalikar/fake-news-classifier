@@ -37,10 +37,12 @@ A web-based application that uses machine learning and NLP techniques to detect 
    cd fake-news-classifier
    
 2. Install dependencies
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 3. Run the app
-PYTHONPATH=. python app/app.py
+      ```bash
+      PYTHONPATH=. python app/app.py
 
 4. Open your browser and go to http://127.0.0.1:5000
 
