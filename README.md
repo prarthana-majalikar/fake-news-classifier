@@ -2,7 +2,7 @@
 
 A web-based application that uses machine learning and NLP techniques to detect whether a given news article is **real** or **fake**.
 
-![Fake News Classifier Demo]
+**Fake News Classifier Demo**
 <img width="1065" alt="image" src="https://github.com/user-attachments/assets/9fe5169d-10cc-43c8-98e9-1bc5c002214b" />
 
 
@@ -25,7 +25,6 @@ A web-based application that uses machine learning and NLP techniques to detect 
 - **ML/NLP**: scikit-learn, NLTK, TfidfVectorizer
 - **Model**: Logistic Regression (can be swapped with others)
 
----
 
 ---
 
