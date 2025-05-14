@@ -25,7 +25,6 @@ A web-based application that uses machine learning and NLP techniques to detect 
 - **ML/NLP**: scikit-learn, NLTK, TfidfVectorizer
 - **Model**: Logistic Regression (can be swapped with others)
 
----
 
 ---
 
