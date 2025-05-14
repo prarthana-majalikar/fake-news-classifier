@@ -11,15 +11,14 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    text = request.form['news']
+    text = request.form['headline']
     processed_text = preprocess_text(text)
     result = predict_news(processed_text)
-
-    if result is None:
-        return render_template("index.html", prediction="Error: could not classify the news.")
-
-    label, confidence = result
-    return render_template('index.html', prediction=label, confidence=confidence)
+    if result:
+        label, confidence = result
+        return render_template('index.html', label=label, confidence=confidence, user_input=text)
+    else:
+        return render_template('index.html', label="Error", confidence="0.0", user_input=text)
 
 if __name__ == "__main__":
     app.run(debug=True)
