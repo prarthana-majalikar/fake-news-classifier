@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import joblib
 from src.preprocess import preprocess_text
 from src.predict import predict_news
+import os
 
 app = Flask(__name__)
 
@@ -21,4 +22,4 @@ def predict():
         return render_template('index.html', label="Error", confidence="0.0", user_input=text)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
